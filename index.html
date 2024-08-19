@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Chocolate Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to an external slider library or CSS for custom slider styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Image Slider -->
+        <section class="slider-container">
+            <div class="slider">
+                <div><img src="truffle-virtual-gift-card2.webp" alt="Delicious chocolate truffles"></div>
+                <div><img src="Caramel-Truffles_EXPS_HCA20_28647_05_29_E_7b.webp" alt="Assorted gourmet chocolates"></div>
+                <div><img src="81HEYf-WNnL.webp" alt="Chocolate gift hampers"></div>
+            </div>
+        </section>
+
+        <section class="welcome-message">
+            <h1>Welcome to Chocolate Heaven</h1>
+            <p>
+                Discover a world of exquisite chocolates crafted with passion, quality, and care. Whether you're a connoisseur or simply a lover of sweet treats, we offer a delightful range of chocolates to satisfy every craving.
+            </p>
+            <p>
+                From our signature dark chocolate bars to our innovative truffle collections, each piece is handcrafted with the finest ingredients. Explore our collections, find the perfect gift, or treat yourself to something special. Welcome to the world of Chocolate Heaven.
+            </p>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <h2>Our Bestsellers</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="images/dark-chocolate.jpg" alt="Signature Dark Chocolate Bar">
+                    <h3>Signature Dark Chocolate Bar</h3>
+                    <p>70% cocoa, rich and intense flavor.</p>
+                </div>
+                <div class="product">
+                    <img src="images/truffles.jpg" alt="Artisan Truffle Collection">
+                    <h3>Artisan Truffle Collection</h3>
+                    <p>Hand-rolled truffles in various flavors.</p>
+                </div>
+                <div class="product">
+                    <img src="images/gift-hamper.jpg" alt="Chocolate Gift Hamper">
+                    <h3>Chocolate Gift Hamper</h3>
+                    <p>The perfect gift for any occasion.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Ready to Indulge?</h2>
+            <p>Visit our shop to explore the full range of our products or contact us to place a custom order. We look forward to delighting your taste buds!</p>
+            <a href="services.html" class="button">Explore Our Products</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Chocolate Heaven. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <!-- Include JavaScript for the slider functionality -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: false,
+                fade: true
+            });
+        });
+    </script>
+</body>
+</html>

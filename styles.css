@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.slider-container {
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    padding: 20px 0; /* Padding for spacing */
+}
+
+.slider {
+    width: 300px; /* Width of the slider */
+    height: 300px; /* Height of the slider */
+    position: relative; /* Positioning context for images */
+}
+
+.slider img {
+    width: 100%; /* Ensure the image covers the slider width */
+    height: 100%; /* Ensure the image covers the slider height */
+    object-fit: cover; /* Cover the entire slider area */
+}
+
+/* Ensure the slider is centered on smaller screens */
+@media (max-width: 768px) {
+    .slider {
+        width: 80%;
+        height: auto; /* Adjust height proportionally */
+    }
+}
+
+
+.welcome-message, .featured-products, .cta {
+    text-align: center;
+    padding: 20px;
+}
+
+.featured-products .product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-grid .product {
+    margin: 10px;
+    max-width: 200px;
+}
+
+.product-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.cta {
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.cta .button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
